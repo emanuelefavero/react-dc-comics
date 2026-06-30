@@ -1,29 +1,105 @@
+/* TOKENS */
 :root {
   --foreground: #16171d;
   --background: #f3f4f6;
+  --primary: #0082f9;
+  --selection: rgb(0 130 249 / 0.3);
 
-  /* TODO Change font to Open Sans */
-  --sans: system-ui, sans-serif;
+  --sans: 'Open Sans', system-ui, sans-serif;
+}
 
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  color: var(--foreground);
+  background-color: var(--selection);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
   color: var(--foreground);
   background: var(--background);
+  min-height: 100svh;
   font-family: var(--sans);
+  line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  margin: 0;
+button {
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: none;
+  box-shadow: none;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
 }
 
-/* TODO set app content max width to 1280px */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* BASE */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   min-height: 100svh;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
