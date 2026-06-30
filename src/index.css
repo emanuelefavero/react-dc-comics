@@ -1,0 +1,29 @@
+:root {
+  --foreground: #16171d;
+  --background: #f3f4f6;
+
+  /* TODO Change font to Open Sans */
+  --sans: system-ui, sans-serif;
+
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TODO set app content max width to 1280px */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100svh;
+}
