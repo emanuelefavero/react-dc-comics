@@ -1,6 +1,6 @@
 # React DC Comics
 
-Esercizio React del mio corso Web Dev.
+Esercizio React su componenti e layout dal mio corso Web Dev.
 
 L'obiettivo è creare un progetto React e suddividere il layout in componenti riutilizzabili, seguendo lo screenshot di riferimento.
 
