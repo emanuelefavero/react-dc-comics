@@ -2,6 +2,7 @@
 :root {
   --foreground: #fff;
   --foreground-muted: #959595;
+  --foreground-soft: #cfd1e0;
   --foreground-inverted: #464646;
   --background: #1c1c1c;
   --background-secondary: #303030;
@@ -160,8 +161,8 @@ body {
 }
 
 .text-3xl {
-  font-size: 1.875rem;
-  line-height: calc(2.25 / 1.875);
+  font-size: 1.7rem;
+  line-height: calc(2.25 / 1.7);
   letter-spacing: -0.07em;
 }
 

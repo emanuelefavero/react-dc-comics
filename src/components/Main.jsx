@@ -15,13 +15,30 @@ const services = [
 
 const Content = () => (
   <section className='content'>
-    <div className='container'>Content</div>
+    <div className='container'>
+      <h1 className='text-3xl'>
+        {'-->'} Content goes here {'<--'}
+      </h1>
+    </div>
   </section>
 );
 
 const Services = () => (
   <section className='services'>
-    <div className='container'>Services</div>
+    <div className='container'>
+      <nav aria-label='DC services'>
+        <ul>
+          {services.map(({ label, href, icon }, index) => (
+            <li key={`service-${index}`}>
+              <a href={href}>
+                <img src={icon} alt={label} />
+                <span className='uppercase'>{label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   </section>
 );
 
