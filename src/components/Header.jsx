@@ -1,5 +1,7 @@
+import './Header.css';
+
 export const Header = () => (
-  <header>
+  <header className='header'>
     <div className='container'>Header</div>
   </header>
 );
