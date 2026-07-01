@@ -1,18 +1,43 @@
-# React + Vite
+# React DC Comics
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Esercizio React del mio corso Web Dev.
 
-Currently, two official plugins are available:
+L'obiettivo è creare un progetto React e suddividere il layout in componenti riutilizzabili, seguendo lo screenshot di riferimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshot di riferimento
 
-## React Compiler
+<img src="./reference-screenshot.png" alt="Screenshot di riferimento" width="360" />
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Lo screenshot di riferimento si trova [qui](./reference-screenshot.png).
 
-Note: This will impact Vite dev & build performances.
+## Traccia
 
-## Expanding the Oxlint configuration
+- Creare un nuovo progetto React.
+- Definire i componenti necessari per strutturare il layout come da screenshot.
+- Usare il font Open Sans.
+- Quando la struttura è solida, passare al CSS.
+- Bonus: creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Assets
+
+Gli asset del progetto si trovano in:
+
+```txt
+src/assets/
+```
+
+In particolare, immagini, loghi, icone e sfondi sono nella cartella:
+
+```txt
+src/assets/img/
+```
+
+## Sviluppo
+
+- Clona questa repository con `git clone https://github.com/emanuelefavero/react-dc-comics.git`
+- Entra nella cartella del progetto con `cd react-dc-comics`
+- Installa le dipendenze con `npm install`
+- Avvia il progetto con `npm run dev`
+- Visualizza il progetto all'indirizzo `http://localhost:5173/`
+
+&nbsp;
