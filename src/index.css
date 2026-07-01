@@ -28,6 +28,11 @@
   background-color: var(--selection);
 }
 
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 button {
   padding: 0;
   border: 0;
@@ -119,8 +124,8 @@ body {
 
 /* Typography: Font Size, Line Height, Letter Spacing */
 .text-xs {
-  font-size: 0.75rem;
-  line-height: calc(1 / 0.75);
+  font-size: 0.8rem;
+  line-height: calc(1 / 0.8);
   letter-spacing: -0.03em;
 }
 
