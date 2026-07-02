@@ -114,7 +114,7 @@ const CTA = () => (
             {socialLinks.map(({ label, href, icon }) => (
               <li key={label}>
                 <a href={href} className='social-link'>
-                  <img src={icon} alt={label} />
+                  <img src={icon} alt={`Follow us on ${label}`} />
                 </a>
               </li>
             ))}
