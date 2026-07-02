@@ -6,63 +6,62 @@ import twitterIcon from '../assets/img/footer-twitter.png';
 import youtubeIcon from '../assets/img/footer-youtube.png';
 import './Footer.css';
 
+const footerLinkGroups = {
+  dcComics: {
+    title: 'DC Comics',
+    links: [
+      { label: 'Characters', href: '#' },
+      { label: 'Comics', href: '#' },
+      { label: 'Movies', href: '#' },
+      { label: 'TV', href: '#' },
+      { label: 'Games', href: '#' },
+      { label: 'Videos', href: '#' },
+      { label: 'News', href: '#' },
+    ],
+  },
+  shop: {
+    title: 'Shop',
+    links: [
+      { label: 'Shop DC', href: '#' },
+      { label: 'Shop DC Collectibles', href: '#' },
+    ],
+  },
+  dc: {
+    title: 'DC',
+    links: [
+      { label: 'Terms Of Use', href: '#' },
+      { label: 'Privacy policy (New)', href: '#' },
+      { label: 'Ad Choices', href: '#' },
+      { label: 'Advertising', href: '#' },
+      { label: 'Jobs', href: '#' },
+      { label: 'Subscriptions', href: '#' },
+      { label: 'Talent Workshops', href: '#' },
+      { label: 'CPSC Certificates', href: '#' },
+      { label: 'Ratings', href: '#' },
+      { label: 'Shop Help', href: '#' },
+      { label: 'Contact Us', href: '#' },
+    ],
+  },
+  sites: {
+    title: 'Sites',
+    links: [
+      { label: 'DC', href: '#' },
+      { label: 'MAD Magazine', href: '#' },
+      { label: 'DC Kids', href: '#' },
+      { label: 'DC Universe', href: '#' },
+      { label: 'DC Power Visa', href: '#' },
+    ],
+  },
+};
+
+const { dcComics, shop, dc, sites } = footerLinkGroups;
 const footerColumns = [
   // Column 1
-  [
-    {
-      title: 'DC Comics',
-      links: [
-        { label: 'Characters', href: '#' },
-        { label: 'Comics', href: '#' },
-        { label: 'Movies', href: '#' },
-        { label: 'TV', href: '#' },
-        { label: 'Games', href: '#' },
-        { label: 'Videos', href: '#' },
-        { label: 'News', href: '#' },
-      ],
-    },
-    {
-      title: 'Shop',
-      links: [
-        { label: 'Shop DC', href: '#' },
-        { label: 'Shop DC Collectibles', href: '#' },
-      ],
-    },
-  ],
-
+  [dcComics, shop],
   // Column 2
-  [
-    {
-      title: 'DC',
-      links: [
-        { label: 'Terms Of Use', href: '#' },
-        { label: 'Privacy policy (New)', href: '#' },
-        { label: 'Ad Choices', href: '#' },
-        { label: 'Advertising', href: '#' },
-        { label: 'Jobs', href: '#' },
-        { label: 'Subscriptions', href: '#' },
-        { label: 'Talent Workshops', href: '#' },
-        { label: 'CPSC Certificates', href: '#' },
-        { label: 'Ratings', href: '#' },
-        { label: 'Shop Help', href: '#' },
-        { label: 'Contact Us', href: '#' },
-      ],
-    },
-  ],
-
+  [dc],
   // Column 3
-  [
-    {
-      title: 'Sites',
-      links: [
-        { label: 'DC', href: '#' },
-        { label: 'MAD Magazine', href: '#' },
-        { label: 'DC Kids', href: '#' },
-        { label: 'DC Universe', href: '#' },
-        { label: 'DC Power Visa', href: '#' },
-      ],
-    },
-  ],
+  [sites],
 ];
 
 const socialLinks = [
@@ -83,6 +82,7 @@ const Hero = () => (
               {column.map(({ title, links }) => (
                 <div key={title} className='link-group'>
                   <h2 className='uppercase text-lg'>{title}</h2>
+
                   <ul>
                     {links.map(({ label, href }) => (
                       <li key={label}>
