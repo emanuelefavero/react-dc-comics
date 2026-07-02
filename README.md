@@ -2,21 +2,25 @@
 
 Esercizio React su componenti e layout dal mio corso Web Dev.
 
-L'obiettivo è creare un progetto React e suddividere il layout in componenti riutilizzabili, seguendo lo screenshot di riferimento.
+Il progetto è diviso in più fasi, aggiunte progressivamente durante le lezioni React.
 
-## Screenshot di riferimento
+## Fasi
 
-<img src="./reference-screenshot.png" alt="Screenshot di riferimento" width="360" />
+### Fase 1
 
-Lo screenshot di riferimento si trova [qui](./reference-screenshot.png).
+Introduzione a React, JSX e componenti.  
+Obiettivo: strutturare il layout principale del sito partendo dallo screenshot di riferimento, dando priorità alla divisione in componenti.
 
-## Traccia
+<img src="./references/phase-1-screenshot.png" alt="Screenshot di riferimento fase 1" width="360" />
 
-- Creare un nuovo progetto React.
-- Definire i componenti necessari per strutturare il layout come da screenshot.
-- Usare il font Open Sans.
-- Quando la struttura è solida, passare al CSS.
-- Bonus: creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+### Fase 2
+
+Iterazioni in JSX con `.map()` e `key`.  
+Obiettivo: rendere dinamiche navbar, lista fumetti e footer links usando array di dati e iterazioni in JSX.
+
+<img src="./references/phase-2-screenshot.png" alt="Screenshot di riferimento fase 2" width="360" />
+
+Gli screenshot di riferimento si trovano nella cartella [`references`](./references).
 
 ## Assets
 
@@ -43,10 +47,10 @@ src/assets/img/
 ## Note tecniche
 
 - Ho diviso il layout principale in tre componenti: `Header`, `Main` e `Footer`.
-- Dentro i componenti principali ho creato piccoli componenti locali, come `Logo`, `Navbar`, `Content`, `Services`, `Hero` e `CTA`, per separare meglio le parti della pagina senza creare troppi file.
+- Dove utile, ho creato componenti più piccoli come `Logo`, `Navbar`, `Content`, `ServicesBar`, `Hero` e `CTA`, per separare meglio le parti della pagina senza creare troppi file.
 - Per centrare il contenuto ho usato una classe globale `.container`, mentre header, sezioni e footer restano larghi quanto tutto il viewport.
 - Ho usato array di oggetti e `.map()` per generare le parti ripetute, come la navbar, la fascia azzurra dei servizi, i link del footer e i social link.
-- La fascia azzurra con le icone è gestita dal componente `Services`, come richiesto nel bonus.
+- La fascia azzurra con le icone è gestita dal componente `ServicesBar`, come richiesto nel bonus.
 - Nel footer ho strutturato i link in colonne per rispettare il layout dello screenshot: la prima colonna contiene `DC Comics` e `Shop`, mentre le altre colonne contengono `DC` e `Sites`.
 - Le immagini usate come contenuto, come logo e icone, sono importate nei componenti React. Le immagini decorative di sfondo sono invece gestite via CSS con `background-image`.
 - Ho aggiunto alcuni accorgimenti di accessibilità: testi alternativi per le immagini significative, `alt=""` per le icone decorative, `aria-label` sulle navigazioni senza titolo visibile e link generati con struttura `nav > ul > li > a`.
