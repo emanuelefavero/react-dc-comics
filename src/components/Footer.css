@@ -33,6 +33,11 @@
                 display: block;
                 color: var(--foreground-muted);
                 padding-block: 0.15rem;
+
+                &:hover {
+                  text-decoration: underline;
+                  text-underline-offset: 0.3rem;
+                }
               }
             }
           }
