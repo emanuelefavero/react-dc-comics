@@ -1,17 +1,5 @@
-import digitalComicsImg from '../assets/img/buy-comics-digital-comics.png';
-import merchandiseImg from '../assets/img/buy-comics-merchandise.png';
-import comicShopLocatorImg from '../assets/img/buy-comics-shop-locator.png';
-import subscriptionImg from '../assets/img/buy-comics-subscriptions.png';
-import powerVisaImg from '../assets/img/buy-dc-power-visa.svg';
 import './Main.css';
-
-const services = [
-  { label: 'Digital Comics', href: '#', icon: digitalComicsImg },
-  { label: 'DC Merchandise', href: '#', icon: merchandiseImg },
-  { label: 'Subscription', href: '#', icon: subscriptionImg },
-  { label: 'Comic Shop Locator', href: '#', icon: comicShopLocatorImg },
-  { label: 'DC Power Visa', href: '#', icon: powerVisaImg },
-];
+import { ServicesBar } from './ServicesBar';
 
 const Content = () => (
   <section className='content'>
@@ -23,28 +11,9 @@ const Content = () => (
   </section>
 );
 
-const Services = () => (
-  <section className='services'>
-    <div className='container'>
-      <nav aria-label='DC services'>
-        <ul>
-          {services.map(({ label, href, icon }) => (
-            <li key={label}>
-              <a href={href}>
-                <img src={icon} alt='' draggable='false' />
-                <span className='uppercase'>{label}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-  </section>
-);
-
 export const Main = () => (
   <main className='main'>
     <Content />
-    <Services />
+    <ServicesBar />
   </main>
 );
