@@ -99,7 +99,14 @@ const Hero = () => (
         </ul>
       </nav>
 
-      <img className='logo' src={footerLogo} alt='' width={563} height={560} />
+      <img
+        className='logo'
+        src={footerLogo}
+        alt=''
+        width={563}
+        height={560}
+        draggable='false'
+      />
     </div>
   </div>
 );
@@ -119,7 +126,11 @@ const CTA = () => (
             {socialLinks.map(({ label, href, icon }) => (
               <li key={label}>
                 <a href={href} className='social-link'>
-                  <img src={icon} alt={`Follow us on ${label}`} />
+                  <img
+                    src={icon}
+                    alt={`Follow us on ${label}`}
+                    draggable='false'
+                  />
                 </a>
               </li>
             ))}

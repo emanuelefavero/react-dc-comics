@@ -16,7 +16,13 @@ const navLinks = [
 
 const Logo = () => (
   <a href='#' className='logo'>
-    <img src={logoImg} alt='DC Comics' width={80} height={80} />
+    <img
+      src={logoImg}
+      alt='DC Comics'
+      width={80}
+      height={80}
+      draggable='false'
+    />
   </a>
 );
 
