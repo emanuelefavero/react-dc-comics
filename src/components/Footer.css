@@ -71,6 +71,12 @@
       flex-wrap: wrap;
       gap: 1rem;
 
+      @media (max-width: 540px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
       a.signup {
         border: 2px solid var(--primary);
         padding-block: 0.5rem;
@@ -87,12 +93,21 @@
         &:active {
           transform: scale(0.97);
         }
+
+        @media (max-width: 540px) {
+          text-align: center;
+        }
       }
 
       .socials {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        @media (max-width: 540px) {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
 
         .title {
           color: var(--primary);
@@ -103,6 +118,10 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
+
+            @media (max-width: 540px) {
+              justify-content: center;
+            }
 
             .social-link {
               display: block;
