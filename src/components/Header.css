@@ -49,7 +49,7 @@
       }
     }
 
-    @media (min-width: 900px) {
+    @media (width >= 900px) {
       display: block;
     }
   }

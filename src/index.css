@@ -8,7 +8,6 @@
   --background-secondary: #303030;
   --primary: #0082f9;
   --selection: rgb(0 130 249 / 0.3);
-
   --sans: 'Open Sans', system-ui, sans-serif;
 }
 
@@ -99,7 +98,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -181,7 +180,9 @@ body {
 }
 
 /* ------------------------- */
+
 /* DEBUG */
+
 /*  TIP: Assign a 'debug' class to the root element to enable debug styles */
 .debug {
   * {
