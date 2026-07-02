@@ -40,4 +40,14 @@ src/assets/img/
 - Avvia il progetto con `npm run dev`
 - Visualizza il progetto all'indirizzo `http://localhost:5173/`
 
-&nbsp;
+## Note tecniche
+
+- Ho diviso il layout principale in tre componenti: `Header`, `Main` e `Footer`.
+- Dentro i componenti principali ho creato piccoli componenti locali, come `Logo`, `Navbar`, `Content`, `Services`, `Hero` e `CTA`, per separare meglio le parti della pagina senza creare troppi file.
+- Per centrare il contenuto ho usato una classe globale `.container`, mentre header, sezioni e footer restano larghi quanto tutto il viewport.
+- Ho usato array di oggetti e `.map()` per generare le parti ripetute, come la navbar, la fascia azzurra dei servizi, i link del footer e i social link.
+- La fascia azzurra con le icone è gestita dal componente `Services`, come richiesto nel bonus.
+- Nel footer ho strutturato i link in colonne per rispettare il layout dello screenshot: la prima colonna contiene `DC Comics` e `Shop`, mentre le altre colonne contengono `DC` e `Sites`.
+- Le immagini usate come contenuto, come logo e icone, sono importate nei componenti React. Le immagini decorative di sfondo sono invece gestite via CSS con `background-image`.
+- Ho aggiunto alcuni accorgimenti di accessibilità: testi alternativi per le immagini significative, `alt=""` per le icone decorative, `aria-label` sulle navigazioni senza titolo visibile e link generati con struttura `nav > ul > li > a`.
+- Il CSS è diviso tra stili globali in `index.css` e stili specifici dei componenti nei rispettivi file CSS, usando il nesting per mantenere gli stili più facili da trovare.
