@@ -8,68 +8,69 @@ import './Footer.css';
 
 const footerLinkGroups = {
   dcComics: {
+    id: 1,
     title: 'DC Comics',
     links: [
-      { label: 'Characters', href: '#' },
-      { label: 'Comics', href: '#' },
-      { label: 'Movies', href: '#' },
-      { label: 'TV', href: '#' },
-      { label: 'Games', href: '#' },
-      { label: 'Videos', href: '#' },
-      { label: 'News', href: '#' },
+      { id: 1, label: 'Characters', href: '#' },
+      { id: 2, label: 'Comics', href: '#' },
+      { id: 3, label: 'Movies', href: '#' },
+      { id: 4, label: 'TV', href: '#' },
+      { id: 5, label: 'Games', href: '#' },
+      { id: 6, label: 'Videos', href: '#' },
+      { id: 7, label: 'News', href: '#' },
     ],
   },
   shop: {
+    id: 2,
     title: 'Shop',
     links: [
-      { label: 'Shop DC', href: '#' },
-      { label: 'Shop DC Collectibles', href: '#' },
+      { id: 1, label: 'Shop DC', href: '#' },
+      { id: 2, label: 'Shop DC Collectibles', href: '#' },
     ],
   },
   dc: {
+    id: 3,
     title: 'DC',
     links: [
-      { label: 'Terms Of Use', href: '#' },
-      { label: 'Privacy policy (New)', href: '#' },
-      { label: 'Ad Choices', href: '#' },
-      { label: 'Advertising', href: '#' },
-      { label: 'Jobs', href: '#' },
-      { label: 'Subscriptions', href: '#' },
-      { label: 'Talent Workshops', href: '#' },
-      { label: 'CPSC Certificates', href: '#' },
-      { label: 'Ratings', href: '#' },
-      { label: 'Shop Help', href: '#' },
-      { label: 'Contact Us', href: '#' },
+      { id: 1, label: 'Terms Of Use', href: '#' },
+      { id: 2, label: 'Privacy policy (New)', href: '#' },
+      { id: 3, label: 'Ad Choices', href: '#' },
+      { id: 4, label: 'Advertising', href: '#' },
+      { id: 5, label: 'Jobs', href: '#' },
+      { id: 6, label: 'Subscriptions', href: '#' },
+      { id: 7, label: 'Talent Workshops', href: '#' },
+      { id: 8, label: 'CPSC Certificates', href: '#' },
+      { id: 9, label: 'Ratings', href: '#' },
+      { id: 10, label: 'Shop Help', href: '#' },
+      { id: 11, label: 'Contact Us', href: '#' },
     ],
   },
   sites: {
+    id: 4,
     title: 'Sites',
     links: [
-      { label: 'DC', href: '#' },
-      { label: 'MAD Magazine', href: '#' },
-      { label: 'DC Kids', href: '#' },
-      { label: 'DC Universe', href: '#' },
-      { label: 'DC Power Visa', href: '#' },
+      { id: 1, label: 'DC', href: '#' },
+      { id: 2, label: 'MAD Magazine', href: '#' },
+      { id: 3, label: 'DC Kids', href: '#' },
+      { id: 4, label: 'DC Universe', href: '#' },
+      { id: 5, label: 'DC Power Visa', href: '#' },
     ],
   },
 };
 
 const { dcComics, shop, dc, sites } = footerLinkGroups;
 const footerColumns = [
-  // Column 1
-  [dcComics, shop],
-  // Column 2
-  [dc],
-  // Column 3
-  [sites],
+  { id: 1, groups: [dcComics, shop] },
+  { id: 2, groups: [dc] },
+  { id: 3, groups: [sites] },
 ];
 
 const socialLinks = [
-  { label: 'Facebook', href: '#', icon: facebookIcon },
-  { label: 'Twitter', href: '#', icon: twitterIcon },
-  { label: 'YouTube', href: '#', icon: youtubeIcon },
-  { label: 'Pinterest', href: '#', icon: pinterestIcon },
-  { label: 'Periscope', href: '#', icon: periscopeIcon },
+  { id: 1, label: 'Facebook', href: '#', icon: facebookIcon },
+  { id: 2, label: 'Twitter', href: '#', icon: twitterIcon },
+  { id: 3, label: 'YouTube', href: '#', icon: youtubeIcon },
+  { id: 4, label: 'Pinterest', href: '#', icon: pinterestIcon },
+  { id: 5, label: 'Periscope', href: '#', icon: periscopeIcon },
 ];
 
 const Hero = () => (
@@ -77,15 +78,15 @@ const Hero = () => (
     <div className='container'>
       <nav className='links' aria-label='Footer navigation'>
         <ul className='columns'>
-          {footerColumns.map((column, index) => (
-            <li key={index} className='column'>
-              {column.map(({ title, links }) => (
-                <div key={title} className='link-group'>
+          {footerColumns.map(({ id, groups }) => (
+            <li key={id} className='column'>
+              {groups.map(({ id, title, links }) => (
+                <div key={id} className='link-group'>
                   <h2 className='uppercase text-lg'>{title}</h2>
 
                   <ul>
-                    {links.map(({ label, href }) => (
-                      <li key={label}>
+                    {links.map(({ id, label, href }) => (
+                      <li key={id}>
                         <a href={href} className='link text-xs'>
                           {label}
                         </a>
@@ -123,8 +124,8 @@ const CTA = () => (
 
         <nav aria-label='Social links' className='social-links'>
           <ul>
-            {socialLinks.map(({ label, href, icon }) => (
-              <li key={label}>
+            {socialLinks.map(({ id, label, href, icon }) => (
+              <li key={id}>
                 <a href={href} className='social-link'>
                   <img
                     src={icon}

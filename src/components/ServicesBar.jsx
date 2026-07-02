@@ -6,11 +6,11 @@ import powerVisaImg from '../assets/img/buy-dc-power-visa.svg';
 import './ServicesBar.css';
 
 const services = [
-  { label: 'Digital Comics', href: '#', icon: digitalComicsImg },
-  { label: 'DC Merchandise', href: '#', icon: merchandiseImg },
-  { label: 'Subscription', href: '#', icon: subscriptionImg },
-  { label: 'Comic Shop Locator', href: '#', icon: comicShopLocatorImg },
-  { label: 'DC Power Visa', href: '#', icon: powerVisaImg },
+  { id: 1, label: 'Digital Comics', href: '#', icon: digitalComicsImg },
+  { id: 2, label: 'DC Merchandise', href: '#', icon: merchandiseImg },
+  { id: 3, label: 'Subscription', href: '#', icon: subscriptionImg },
+  { id: 4, label: 'Comic Shop Locator', href: '#', icon: comicShopLocatorImg },
+  { id: 5, label: 'DC Power Visa', href: '#', icon: powerVisaImg },
 ];
 
 export const ServicesBar = () => (
@@ -18,8 +18,8 @@ export const ServicesBar = () => (
     <div className='container'>
       <nav aria-label='DC services'>
         <ul>
-          {services.map(({ label, href, icon }) => (
-            <li key={label}>
+          {services.map(({ id, label, href, icon }) => (
+            <li key={id}>
               <a href={href}>
                 <img src={icon} alt='' draggable='false' />
                 <span className='uppercase'>{label}</span>
