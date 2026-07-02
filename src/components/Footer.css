@@ -75,6 +75,18 @@
         border: 2px solid var(--primary);
         padding-block: 0.5rem;
         padding-inline: 0.8rem;
+        transition:
+          background-color 0.2s ease,
+          transform 0.2s ease;
+
+        &:hover,
+        &:focus-visible {
+          background-color: var(--primary);
+        }
+
+        &:active {
+          transform: scale(0.97);
+        }
       }
 
       .socials {
