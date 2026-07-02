@@ -7,6 +7,7 @@ import youtubeIcon from '../assets/img/footer-youtube.png';
 import './Footer.css';
 
 const footerColumns = [
+  // Column 1
   [
     {
       title: 'DC Comics',
@@ -28,6 +29,8 @@ const footerColumns = [
       ],
     },
   ],
+
+  // Column 2
   [
     {
       title: 'DC',
@@ -46,6 +49,8 @@ const footerColumns = [
       ],
     },
   ],
+
+  // Column 3
   [
     {
       title: 'Sites',
