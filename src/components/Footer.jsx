@@ -79,7 +79,7 @@ const Hero = () => (
       <nav className='links' aria-label='Footer navigation'>
         <ul className='columns'>
           {footerColumns.map((column, index) => (
-            <li key={`footer-column-${index}`} className='column'>
+            <li key={index} className='column'>
               {column.map(({ title, links }) => (
                 <div key={title} className='link-group'>
                   <h2 className='uppercase text-lg'>{title}</h2>
