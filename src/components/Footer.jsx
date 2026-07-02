@@ -1,3 +1,4 @@
+import footerLogo from '../assets/img/dc-logo-bg.png';
 import './Footer.css';
 
 const footerLinks = [
@@ -58,7 +59,11 @@ const socialLinks = [
 
 const Hero = () => (
   <div className='hero'>
-    <div className='container'></div>
+    <div className='container'>
+      <nav className='links'>Footer Links</nav>
+
+      <img className='logo' src={footerLogo} alt='' width={563} height={560} />
+    </div>
   </div>
 );
 

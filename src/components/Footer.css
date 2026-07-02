@@ -2,7 +2,26 @@
   background-color: var(--background-secondary);
 
   .hero {
+    position: relative;
+    min-height: 370px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
+    overflow: hidden;
+
+    .container {
+      position: relative;
+
+      .links {
+        padding-block: 3rem;
+      }
+
+      .logo {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        max-width: none;
+        transform: translateY(-27%);
+      }
+    }
   }
 }
