@@ -182,7 +182,7 @@ body {
 
 /* ------------------------- */
 /* DEBUG */
-.debug {
+/* .debug {
   header,
   main,
   section,
@@ -203,6 +203,32 @@ body {
   footer {
     outline-color: rgb(255 165 0 / 0.8);
   }
+} */
+
+.debug {
+  * {
+    outline: 1px solid rgb(255 0 0 / 0.35);
+  }
+
+  * * {
+    outline-color: rgb(0 130 249 / 0.45);
+  }
+
+  * * * {
+    outline-color: rgb(46 204 113 / 0.45);
+  }
+
+  * * * * {
+    outline-color: rgb(255 165 0 / 0.45);
+  }
+
+  * * * * * * {
+    outline-color: rgb(255 0 255 / 0.45);
+  }
+
+  * * * * * * * * {
+    outline-color: rgb(255 255 0 / 0.45);
+  }
 }
 
 .debug-toggle {
@@ -213,7 +239,7 @@ body {
   padding: 0.5rem 1rem;
   background-color: var(--background-secondary);
   color: var(--foreground);
-  border: none;
+  border: 1px solid var(--foreground);
   border-radius: 0.25rem;
   cursor: pointer;
 
