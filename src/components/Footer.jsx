@@ -1,4 +1,9 @@
 import footerLogo from '../assets/img/dc-logo-bg.png';
+import facebookIcon from '../assets/img/footer-facebook.png';
+import periscopeIcon from '../assets/img/footer-periscope.png';
+import pinterestIcon from '../assets/img/footer-pinterest.png';
+import twitterIcon from '../assets/img/footer-twitter.png';
+import youtubeIcon from '../assets/img/footer-youtube.png';
 import './Footer.css';
 
 const footerColumns = [
@@ -56,11 +61,11 @@ const footerColumns = [
 ];
 
 const socialLinks = [
-  { label: 'Facebook', href: '#' },
-  { label: 'Twitter', href: '#' },
-  { label: 'YouTube', href: '#' },
-  { label: 'Pinterest', href: '#' },
-  { label: 'Periscope', href: '#' },
+  { label: 'Facebook', href: '#', icon: facebookIcon },
+  { label: 'Twitter', href: '#', icon: twitterIcon },
+  { label: 'YouTube', href: '#', icon: youtubeIcon },
+  { label: 'Pinterest', href: '#', icon: pinterestIcon },
+  { label: 'Periscope', href: '#', icon: periscopeIcon },
 ];
 
 const Hero = () => (
@@ -96,7 +101,27 @@ const Hero = () => (
 
 const CTA = () => (
   <div className='cta'>
-    <div className='container'>Footer CTA</div>
+    <div className='container'>
+      <a href='#' className='signup uppercase text-lg font-semibold'>
+        Sign-Up Now!
+      </a>
+
+      <div className='socials'>
+        <span className='title uppercase text-xl font-bold'>Follow Us</span>
+
+        <nav aria-label='Social links' className='social-links'>
+          <ul>
+            {socialLinks.map(({ label, href, icon }) => (
+              <li key={label}>
+                <a href={href} className='social-link'>
+                  <img src={icon} alt={label} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 );
 
