@@ -21,7 +21,7 @@ const Logo = () => (
 );
 
 const Navbar = () => (
-  <nav className='navbar'>
+  <nav className='navbar' aria-label='Navbar Links'>
     <ul>
       {navLinks.map((navLink) => (
         <li key={navLink.label}>

@@ -1,0 +1,162 @@
+- generic [ref=e3]:
+  - button "Debug" [ref=e4] [cursor=pointer]
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "DC Logo" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+        - img "DC Logo" [ref=e8]
+      - navigation "Navbar Links" [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Characters" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e13]:
+            - link "Comics" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e15]:
+            - link "Movies" [ref=e16] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e17]:
+            - link "TV" [ref=e18] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e19]:
+            - link "Games" [ref=e20] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e21]:
+            - link "Collectibles" [ref=e22] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e23]:
+            - link "Videos" [ref=e24] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e25]:
+            - link "Fans" [ref=e26] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e27]:
+            - link "News" [ref=e28] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e29]:
+            - link "Shop" [ref=e30] [cursor=pointer]:
+              - /url: "#"
+  - main [ref=e31]:
+    - heading "--> Content goes here <--" [level=1] [ref=e34]
+    - navigation "DC services" [ref=e37]:
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "Digital Comics Digital Comics" [ref=e40] [cursor=pointer]:
+            - /url: "#"
+            - img "Digital Comics" [ref=e41]
+            - generic [ref=e42]: Digital Comics
+        - listitem [ref=e43]:
+          - link "DC Merchandise DC Merchandise" [ref=e44] [cursor=pointer]:
+            - /url: "#"
+            - img "DC Merchandise" [ref=e45]
+            - generic [ref=e46]: DC Merchandise
+        - listitem [ref=e47]:
+          - link "Subscription Subscription" [ref=e48] [cursor=pointer]:
+            - /url: "#"
+            - img "Subscription" [ref=e49]
+            - generic [ref=e50]: Subscription
+        - listitem [ref=e51]:
+          - link "Comic Shop Locator Comic Shop Locator" [ref=e52] [cursor=pointer]:
+            - /url: "#"
+            - img "Comic Shop Locator" [ref=e53]
+            - generic [ref=e54]: Comic Shop Locator
+        - listitem [ref=e55]:
+          - link "DC Power Visa DC Power Visa" [ref=e56] [cursor=pointer]:
+            - /url: "#"
+            - img "DC Power Visa" [ref=e57]
+            - generic [ref=e58]: DC Power Visa
+  - contentinfo [ref=e59]:
+    - navigation "Footer Links" [ref=e62]:
+      - list [ref=e63]:
+        - listitem [ref=e64]:
+          - generic [ref=e65]:
+            - heading "DC Comics" [level=2] [ref=e66]
+            - list [ref=e67]:
+              - listitem [ref=e68]:
+                - link "Characters" [ref=e69] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e70]:
+                - link "Comics" [ref=e71] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e72]:
+                - link "Movies" [ref=e73] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e74]:
+                - link "TV" [ref=e75] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e76]:
+                - link "Games" [ref=e77] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e78]:
+                - link "Videos" [ref=e79] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e80]:
+                - link "News" [ref=e81] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e82]:
+            - heading "Shop" [level=2] [ref=e83]
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - link "Shop DC" [ref=e86] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e87]:
+                - link "Shop DC Collectibles" [ref=e88] [cursor=pointer]:
+                  - /url: "#"
+        - listitem [ref=e89]:
+          - generic [ref=e90]:
+            - heading "DC" [level=2] [ref=e91]
+            - list [ref=e92]:
+              - listitem [ref=e93]:
+                - link "Terms Of Use" [ref=e94] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e95]:
+                - link "Privacy policy (New)" [ref=e96] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e97]:
+                - link "Ad Choices" [ref=e98] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e99]:
+                - link "Advertising" [ref=e100] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e101]:
+                - link "Jobs" [ref=e102] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e103]:
+                - link "Subscriptions" [ref=e104] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e105]:
+                - link "Talent Workshops" [ref=e106] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e107]:
+                - link "CPSC Certificates" [ref=e108] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e109]:
+                - link "Ratings" [ref=e110] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e111]:
+                - link "Shop Help" [ref=e112] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e113]:
+                - link "Contact Us" [ref=e114] [cursor=pointer]:
+                  - /url: "#"
+        - listitem [ref=e115]:
+          - generic [ref=e116]:
+            - heading "Sites" [level=2] [ref=e117]
+            - list [ref=e118]:
+              - listitem [ref=e119]:
+                - link "DC" [ref=e120] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e121]:
+                - link "MAD Magazine" [ref=e122] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e123]:
+                - link "DC Kids" [ref=e124] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e125]:
+                - link "DC Universe" [ref=e126] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e127]:
+                - link "DC Power Visa" [ref=e128] [cursor=pointer]:
+                  - /url: "#"
+    - generic [ref=e130]: Footer CTA
