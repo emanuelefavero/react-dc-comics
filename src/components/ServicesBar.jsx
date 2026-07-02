@@ -6,11 +6,11 @@ export const ServicesBar = () => (
     <div className='container'>
       <nav aria-label='DC services'>
         <ul>
-          {services.map(({ id, label, href, icon }) => (
-            <li key={id}>
-              <a href={href}>
-                <img src={icon} alt='' draggable='false' />
-                <span className='uppercase'>{label}</span>
+          {services.map((service) => (
+            <li key={service.id}>
+              <a href={service.href}>
+                <img src={service.icon} alt='' draggable='false' />
+                <span className='uppercase'>{service.label}</span>
               </a>
             </li>
           ))}

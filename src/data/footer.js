@@ -4,7 +4,7 @@ import pinterestIcon from '../assets/img/footer-pinterest.png';
 import twitterIcon from '../assets/img/footer-twitter.png';
 import youtubeIcon from '../assets/img/footer-youtube.png';
 
-export const footerLinkGroups = {
+export const linkGroups = {
   dcComics: {
     id: 1,
     title: 'DC Comics',

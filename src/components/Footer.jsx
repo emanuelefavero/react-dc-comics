@@ -1,9 +1,9 @@
 import footerLogo from '../assets/img/dc-logo-bg.png';
-import { footerLinkGroups, socialLinks } from '../data/footer.js';
+import { linkGroups, socialLinks } from '../data/footer.js';
 import './Footer.css';
 
-const { dcComics, shop, dc, sites } = footerLinkGroups;
-const footerColumns = [
+const { dcComics, shop, dc, sites } = linkGroups;
+const columns = [
   { id: 1, groups: [dcComics, shop] },
   { id: 2, groups: [dc] },
   { id: 3, groups: [sites] },
@@ -14,17 +14,17 @@ const Hero = () => (
     <div className='container'>
       <nav className='links' aria-label='Footer navigation'>
         <ul className='columns'>
-          {footerColumns.map(({ id, groups }) => (
-            <li key={id} className='column'>
-              {groups.map(({ id, title, links }) => (
-                <div key={id} className='link-group'>
+          {columns.map((column) => (
+            <li key={column.id} className='column'>
+              {column.groups.map((group) => (
+                <div key={group.id} className='link-group'>
                   <h2 className='uppercase text-lg'>{title}</h2>
 
                   <ul>
-                    {links.map(({ id, label, href }) => (
-                      <li key={id}>
-                        <a href={href} className='link text-xs'>
-                          {label}
+                    {group.links.map((link) => (
+                      <li key={link.id}>
+                        <a href={link.href} className='link text-xs'>
+                          {link.label}
                         </a>
                       </li>
                     ))}
@@ -60,12 +60,12 @@ const CTA = () => (
 
         <nav aria-label='Social links' className='social-links'>
           <ul>
-            {socialLinks.map(({ id, label, href, icon }) => (
-              <li key={id}>
-                <a href={href} className='social-link'>
+            {socialLinks.map((link) => (
+              <li key={link.id}>
+                <a href={link.href} className='social-link'>
                   <img
-                    src={icon}
-                    alt={`Follow us on ${label}`}
+                    src={link.icon}
+                    alt={`Follow us on ${link.label}`}
                     draggable='false'
                   />
                 </a>

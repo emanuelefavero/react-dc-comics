@@ -17,13 +17,13 @@ const Logo = () => (
 const Navbar = () => (
   <nav className='navbar' aria-label='Main navigation'>
     <ul>
-      {navLinks.map(({ id, label, href, isActive }) => (
-        <li key={id}>
+      {navLinks.map((link) => (
+        <li key={link.id}>
           <a
-            href={href}
-            className={`uppercase text-xs font-bold ${isActive ? 'active' : ''}`}
+            href={link.href}
+            className={`uppercase text-xs font-bold ${link.isActive ? 'active' : ''}`}
           >
-            {label}
+            {link.label}
           </a>
         </li>
       ))}
