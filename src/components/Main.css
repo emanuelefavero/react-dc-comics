@@ -21,6 +21,10 @@
         align-items: center;
         gap: 0.6rem;
 
+        &:focus-visible {
+          outline-color: var(--foreground);
+        }
+
         img {
           width: 3.5rem;
           height: 3.5rem;
