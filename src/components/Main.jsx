@@ -28,10 +28,10 @@ const Services = () => (
     <div className='container'>
       <nav aria-label='DC services'>
         <ul>
-          {services.map(({ label, href, icon }, index) => (
-            <li key={`service-${index}`}>
+          {services.map(({ label, href, icon }) => (
+            <li key={label}>
               <a href={href}>
-                <img src={icon} alt={label} />
+                <img src={icon} alt='' />
                 <span className='uppercase'>{label}</span>
               </a>
             </li>

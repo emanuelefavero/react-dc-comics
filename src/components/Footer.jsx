@@ -71,7 +71,7 @@ const socialLinks = [
 const Hero = () => (
   <div className='hero'>
     <div className='container'>
-      <nav className='links' aria-label='Footer Links'>
+      <nav className='links' aria-label='Footer navigation'>
         <ul className='columns'>
           {footerColumns.map((column, index) => (
             <li key={`footer-column-${index}`} className='column'>
