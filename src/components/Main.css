@@ -6,6 +6,37 @@
     background-position: center top;
   }
 
-  /* .comics {
-  } */
+  .comics {
+    padding-bottom: 1.25rem;
+
+    .title {
+      padding-inline: 1.875rem;
+      padding-block: 0.6rem;
+      background-color: var(--primary);
+      display: inline-block;
+      transform: translateY(calc(-50%));
+    }
+
+    .list {
+      padding-inline: 0.875rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 3.375rem 1.5rem;
+
+      .card {
+        display: block;
+
+        :not(:first-child) {
+          margin-top: 1.25rem;
+        }
+
+        img {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+  }
 }
