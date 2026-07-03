@@ -1,19 +1,20 @@
 import './Main.css';
 import { ServicesBar } from './ServicesBar';
 
-const Content = () => (
-  <section className='content'>
+const Jumbotron = () => <div className='jumbotron' />;
+
+const Comics = () => (
+  <section className='comics'>
     <div className='container'>
-      <h1 className='text-3xl'>
-        {'-->'} Content goes here {'<--'}
-      </h1>
+      <h1 className='uppercase'>Current Series</h1>
     </div>
   </section>
 );
 
 export const Main = () => (
   <main className='main'>
-    <Content />
+    <Jumbotron />
+    <Comics />
     <ServicesBar />
   </main>
 );

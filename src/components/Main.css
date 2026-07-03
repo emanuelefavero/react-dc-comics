@@ -1,6 +1,11 @@
 .main {
-  .content {
-    padding-block: 3rem;
-    color: var(--foreground-soft);
+  .jumbotron {
+    min-height: clamp(130px, 21vw, 400px);
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+    background-position: center top;
   }
+
+  /* .comics {
+  } */
 }
