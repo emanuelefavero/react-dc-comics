@@ -18,7 +18,7 @@ const Hero = () => (
             <li key={column.id} className='column'>
               {column.groups.map((group) => (
                 <div key={group.id} className='link-group'>
-                  <h2 className='uppercase text-lg'>{title}</h2>
+                  <h2 className='uppercase text-lg'>{group.title}</h2>
 
                   <ul>
                     {group.links.map((link) => (
