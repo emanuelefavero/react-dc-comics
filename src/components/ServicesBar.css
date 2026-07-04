@@ -3,33 +3,56 @@
   background-color: var(--primary);
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
+    --columns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
     align-items: center;
-    justify-content: space-evenly;
     gap: 1.2rem;
 
-    a {
-      padding-block: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
+    @media (width >= 478px) {
+      --columns: 2;
+    }
 
-      &:focus-visible {
-        outline-color: var(--foreground);
-      }
+    @media (width >= 724px) {
+      --columns: 3;
+    }
 
-      img {
-        width: 3.5rem;
-        height: 3.5rem;
-        object-fit: contain;
-        opacity: 0.9;
-      }
+    @media (width >= 1024px) {
+      --columns: 5;
+    }
 
-      span {
-        font-size: 0.9rem;
-        line-height: calc(1.5 / 0.9);
-        letter-spacing: -0.0433em;
+    li {
+      a {
+        padding-block: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        text-align: center;
+
+        @media (width >= 1024px) {
+          flex-direction: row;
+          text-align: start;
+        }
+
+        &:focus-visible {
+          outline-color: var(--foreground);
+        }
+
+        img {
+          width: 3.5rem;
+          height: 3.5rem;
+          object-fit: contain;
+          opacity: 0.9;
+        }
+
+        span {
+          font-size: 0.9rem;
+          line-height: calc(1.5 / 0.9);
+          letter-spacing: -0.043em;
+        }
       }
     }
   }

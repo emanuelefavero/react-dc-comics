@@ -7,7 +7,7 @@
   --background: #1c1c1c;
   --background-secondary: #303030;
   --primary: #0082f9;
-  --selection: rgb(0 130 249 / 0.3);
+  --selection: rgba(82, 114, 159, 0.4);
   --sans: 'Open Sans', system-ui, sans-serif;
 }
 
