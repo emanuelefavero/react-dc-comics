@@ -13,7 +13,9 @@ const Comics = () => (
         {comics.map((comic) => (
           <li key={comic.id}>
             <a href='#' className='card'>
-              <img src={comic.thumb} alt={comic.series} />
+              <div className='cover'>
+                <img src={comic.thumb} alt={comic.series} />
+              </div>
               <h2 className='label uppercase text-base font-semibold'>
                 {comic.series}
               </h2>
