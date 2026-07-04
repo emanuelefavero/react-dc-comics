@@ -14,13 +14,17 @@ const Comics = () => (
           <li key={comic.id}>
             <a href='#' className='card'>
               <img src={comic.thumb} alt={comic.series} />
-              <h2 className='label uppercase text-base font-semibold'>
+              <h2 className='label uppercase text-sm font-semibold'>
                 {comic.series}
               </h2>
             </a>
           </li>
         ))}
       </ul>
+
+      <button type='button' className='button uppercase text-xs font-bold'>
+        Load More
+      </button>
     </div>
   </section>
 );
