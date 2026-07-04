@@ -12,6 +12,7 @@ export const comics = [
     type: 'comic book',
     artists: ['José Luis García-López', 'Clay Mann', 'Rafael Albuquerque'],
     writers: ['Brad Meltzer', 'Tom King', 'Scott Snyder'],
+    thumb_needs_crop: true,
   },
   {
     id: 2,
@@ -172,5 +173,6 @@ export const comics = [
     type: 'graphic novel',
     artists: ['Fernando Blanco', 'Joëlle Jones'],
     writers: ['Joëlle Jones'],
+    thumb_needs_crop: true,
   },
 ];

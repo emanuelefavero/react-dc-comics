@@ -1,4 +1,5 @@
 import { comics } from '../data/comics.js';
+import { cx } from '../lib/utils.js';
 import './Main.css';
 import { ServicesBar } from './ServicesBar';
 
@@ -14,7 +15,12 @@ const Comics = () => (
           <li key={comic.id}>
             <a href='#' className='card'>
               <div className='cover'>
-                <img src={comic.thumb} alt={comic.series} />
+                <img
+                  src={comic.thumb}
+                  alt={comic.series}
+                  // If thumb img has white borders, crop it
+                  className={cx(comic.thumb_needs_crop && 'cropped')}
+                />
               </div>
               <h2 className='label uppercase text-base font-semibold'>
                 {comic.series}
