@@ -30,21 +30,11 @@
           margin-top: 1.25rem;
         }
 
-        .cover {
-          overflow: hidden; /* needed for cropped images, see below ↓ */
-
-          img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            object-position: top center;
-
-            /* NOTE: Temporary fix for non-uniform thumb images with white margins */
-            &.cropped {
-              transform: scale(1.56);
-              transform-origin: top center;
-            }
-          }
+        img {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          object-position: top center;
         }
       }
     }

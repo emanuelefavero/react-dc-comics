@@ -5,14 +5,13 @@ export const comics = [
     description:
       "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman's new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
     thumb:
-      'https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY',
+      'https://imgs.search.brave.com/PvrZh7I_oGVcxZ-i9Wu0hUk-AsP39SaVgsJweaAcVGo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFWSUNKZnRtRUwu/anBn',
     price: '$19.99',
     series: 'Action Comics',
     sale_date: '2018-10-02',
     type: 'comic book',
     artists: ['José Luis García-López', 'Clay Mann', 'Rafael Albuquerque'],
     writers: ['Brad Meltzer', 'Tom King', 'Scott Snyder'],
-    thumb_needs_crop: true,
   },
   {
     id: 2,
@@ -166,13 +165,12 @@ export const comics = [
     description:
       'Following her near-miss wedding with Batman, Catwoman hits the streets to expose a copycat.',
     thumb:
-      'https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm',
+      'https://imgs.search.brave.com/o_GRupcZWdyWueN3mpi269O1-i5xu8D9vW4KYoWwTTQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5h/bWF6b25hd3MuY29t/L2NvbWljZ2Vla3Mv/Y29taWNzL2NvdmVy/cy9sYXJnZS05MjYw/MTIyLmpwZz8xNzA4/NzEzNTY5',
     price: '$16.99',
     series: 'Catwoman',
     sale_date: '2019-04-10',
     type: 'graphic novel',
     artists: ['Fernando Blanco', 'Joëlle Jones'],
     writers: ['Joëlle Jones'],
-    thumb_needs_crop: true,
   },
 ];
