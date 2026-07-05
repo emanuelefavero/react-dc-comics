@@ -8,6 +8,8 @@
   --background-secondary: #303030;
   --primary: #0082f9;
   --selection: rgb(82 114 159 / 0.4);
+  --shadow-sm:
+    0 0.1rem 0.1rem rgb(0 0 0 / 0.2), 0 0.3rem 0.4rem rgb(0 0 0 / 0.15);
   --sans: 'Open Sans', system-ui, sans-serif;
 }
 

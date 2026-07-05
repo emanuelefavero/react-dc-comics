@@ -7,6 +7,7 @@
     background-color: var(--primary);
     display: inline-block;
     transform: translateY(calc(-50%));
+    box-shadow: var(--shadow-sm);
   }
 
   .list {
@@ -38,6 +39,7 @@
         object-fit: cover;
         object-position: top center;
         user-select: none;
+        box-shadow: var(--shadow-sm);
       }
     }
   }
@@ -50,6 +52,7 @@
     padding-inline: 3.4rem;
     padding-block: 0.625rem;
     user-select: none;
+    box-shadow: var(--shadow-sm);
     transition:
       filter 0.2s ease-in-out,
       transform 0.1s ease-in-out;

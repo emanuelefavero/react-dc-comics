@@ -84,6 +84,7 @@
         border: 2px solid var(--primary);
         padding-block: 0.5rem;
         padding-inline: 0.8rem;
+        box-shadow: var(--shadow-sm);
         transition:
           background-color 0.2s ease,
           transform 0.2s ease;
@@ -131,6 +132,7 @@
               width: 2.25rem;
               height: 2.25rem;
               border-radius: 50%;
+              box-shadow: var(--shadow-sm);
               transition: transform 0.1s ease;
 
               &:hover,
