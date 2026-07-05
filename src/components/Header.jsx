@@ -4,14 +4,8 @@ import { cx } from '../lib/utils.js';
 import './Header.css';
 
 const Logo = () => (
-  <a href='#' className='logo'>
-    <img
-      src={logoImg}
-      alt='DC Comics'
-      width={80}
-      height={80}
-      draggable='false'
-    />
+  <a href='#' className='logo' aria-label='DC Comics'>
+    <img src={logoImg} alt='' width={80} height={80} draggable='false' />
   </a>
 );
 
@@ -22,6 +16,7 @@ const Navbar = () => (
         <li key={link.id}>
           <a
             href={link.href}
+            aria-current={link.isActive ? 'page' : undefined} // current page
             className={cx(
               'uppercase text-xs font-bold',
               link.isActive && 'active',
