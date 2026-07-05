@@ -10,7 +10,6 @@
   }
 
   .list {
-    margin-bottom: 3.375rem;
     padding-inline: 0.875rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -35,8 +34,9 @@
 
   .button {
     display: block;
+    margin-inline: auto;
+    margin-top: 3.375rem;
     background-color: var(--primary);
-    margin: 0 auto;
     padding-inline: 3.4rem;
     padding-block: 0.625rem;
     user-select: none;
