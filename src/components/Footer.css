@@ -32,8 +32,11 @@
                 display: block;
                 color: var(--foreground-muted);
                 padding-block: 0.15rem;
+                transition: color 0.2s ease-in-out;
 
-                &:hover {
+                &:hover,
+                &:focus-visible {
+                  color: var(--foreground);
                   text-decoration: underline;
                   text-underline-offset: 0.3rem;
                 }
@@ -91,7 +94,7 @@
         }
 
         &:active {
-          transform: scale(0.97);
+          transform: scaleX(0.95) translateY(1px);
         }
 
         @media (width <= 540px) {
@@ -128,6 +131,16 @@
               width: 2.25rem;
               height: 2.25rem;
               border-radius: 50%;
+              transition: transform 0.1s ease;
+
+              &:hover,
+              &:focus-visible {
+                transform: scale(1.05);
+              }
+
+              &:active {
+                transform: scaleX(0.95) translateY(1px);
+              }
 
               img {
                 width: 100%;

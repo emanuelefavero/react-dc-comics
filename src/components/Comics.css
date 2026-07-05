@@ -17,6 +17,16 @@
 
     .card {
       display: block;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover,
+      &:focus-visible {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scaleX(0.95) translateY(1px);
+      }
 
       > :not(:first-child) {
         margin-top: 1.25rem;
@@ -40,5 +50,17 @@
     padding-inline: 3.4rem;
     padding-block: 0.625rem;
     user-select: none;
+    transition:
+      filter 0.2s ease-in-out,
+      transform 0.1s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      filter: brightness(1.08);
+    }
+
+    &:active {
+      transform: scaleX(0.95) translateY(1px);
+    }
   }
 }
