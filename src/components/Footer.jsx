@@ -1,5 +1,5 @@
 import footerLogo from '@/assets/img/dc-logo-bg.png';
-import { linkGroups, socialLinks } from '@/data/footer.js';
+import { linkGroups, socialLinks } from '@/data/footer';
 import './Footer.css';
 
 const { dcComics, shop, dc, sites } = linkGroups;

@@ -1,6 +1,6 @@
 import logoImg from '@/assets/img/dc-logo.png';
-import { navLinks } from '@/data/navigation.js';
-import { cx } from '@/lib/utils.js';
+import { navLinks } from '@/data/navigation';
+import { cx } from '@/lib/utils';
 import './Header.css';
 
 const Logo = () => (

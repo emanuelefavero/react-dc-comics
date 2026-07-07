@@ -1,4 +1,4 @@
-import { comics } from '@/data/comics.js';
+import { comics } from '@/data/comics';
 import { ComicCard } from './ComicCard';
 import './Comics.css';
 
