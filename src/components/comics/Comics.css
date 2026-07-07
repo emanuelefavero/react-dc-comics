@@ -15,33 +15,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 3.375rem 1.5rem;
-
-    .card {
-      display: block;
-      transition: transform 0.2s ease-in-out;
-
-      &:hover,
-      &:focus-visible {
-        transform: scale(1.05);
-      }
-
-      &:active {
-        transform: scaleX(0.95) translateY(1px);
-      }
-
-      > :not(:first-child) {
-        margin-top: 1.25rem;
-      }
-
-      img {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        object-position: top center;
-        user-select: none;
-        box-shadow: var(--shadow-sm);
-      }
-    }
   }
 
   .button {

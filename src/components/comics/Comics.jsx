@@ -1,4 +1,5 @@
 import { comics } from '@/data/comics.js';
+import { ComicCard } from './ComicCard';
 import './Comics.css';
 
 export const Comics = () => (
@@ -9,12 +10,7 @@ export const Comics = () => (
       <ul className='list'>
         {comics.map((comic) => (
           <li key={comic.id}>
-            <a href='#' className='card'>
-              <img src={comic.thumb} alt={comic.series} />
-              <h2 className='label uppercase text-sm font-semibold'>
-                {comic.series}
-              </h2>
-            </a>
+            <ComicCard comic={comic} />
           </li>
         ))}
       </ul>

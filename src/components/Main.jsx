@@ -1,4 +1,4 @@
-import { Comics } from './Comics';
+import { Comics } from './comics/Comics';
 import './Main.css';
 import { ServicesBar } from './ServicesBar';
 
