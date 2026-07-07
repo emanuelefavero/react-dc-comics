@@ -1,8 +1,8 @@
-import facebookIcon from '../assets/img/footer-facebook.png';
-import periscopeIcon from '../assets/img/footer-periscope.png';
-import pinterestIcon from '../assets/img/footer-pinterest.png';
-import twitterIcon from '../assets/img/footer-twitter.png';
-import youtubeIcon from '../assets/img/footer-youtube.png';
+import facebookIcon from '@/assets/img/footer-facebook.png';
+import periscopeIcon from '@/assets/img/footer-periscope.png';
+import pinterestIcon from '@/assets/img/footer-pinterest.png';
+import twitterIcon from '@/assets/img/footer-twitter.png';
+import youtubeIcon from '@/assets/img/footer-youtube.png';
 
 export const linkGroups = {
   dcComics: {

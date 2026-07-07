@@ -1,4 +1,4 @@
-import { services } from '../data/services.js';
+import { services } from '@/data/services.js';
 import './ServicesBar.css';
 
 export const ServicesBar = () => (
