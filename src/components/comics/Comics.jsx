@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/Button';
 import { comics } from '@/data/comics';
 import { ComicCard } from './ComicCard';
 import './Comics.css';
@@ -15,9 +16,7 @@ export const Comics = () => (
         ))}
       </ul>
 
-      <button type='button' className='button uppercase text-xs font-bold'>
-        Load More
-      </button>
+      <Button className='load-more'>Load More</Button>
     </div>
   </section>
 );

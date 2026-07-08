@@ -17,26 +17,9 @@
     gap: 3.375rem 1.5rem;
   }
 
-  .button {
-    display: block;
+  .load-more {
+    display: flex;
     margin-inline: auto;
     margin-top: 3.375rem;
-    background-color: var(--primary);
-    padding-inline: 3.4rem;
-    padding-block: 0.625rem;
-    user-select: none;
-    box-shadow: var(--shadow-sm);
-    transition:
-      filter 0.2s ease-in-out,
-      transform 0.1s ease-in-out;
-
-    &:hover,
-    &:focus-visible {
-      filter: brightness(1.08);
-    }
-
-    &:active {
-      transform: scaleX(0.95) translateY(1px);
-    }
   }
 }
