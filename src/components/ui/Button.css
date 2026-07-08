@@ -17,11 +17,13 @@
     transform: scaleX(0.95) translateY(1px);
   }
 
+  /* Variants */
   &.primary {
     background-color: var(--primary);
     color: var(--white);
   }
 
+  /* Sizes */
   &.sm {
     padding-inline: 3.4rem;
     padding-block: 0.625rem;

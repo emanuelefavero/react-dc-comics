@@ -1,0 +1,29 @@
+.button-link {
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:active {
+    transform: scaleX(0.95) translateY(1px);
+  }
+
+  /* Variants */
+  &.outline {
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--foreground);
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--primary);
+    }
+  }
+
+  /* Sizes */
+  &.md {
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+  }
+}

@@ -1,4 +1,5 @@
 import footerLogo from '@/assets/img/dc-logo-bg.png';
+import { ButtonLink, buttonLinkVariants } from '@/components/ui/ButtonLink';
 import { linkGroups, socialLinks } from '@/data/footer';
 import './Footer.css';
 
@@ -53,9 +54,14 @@ const Hero = () => (
 const CTA = () => (
   <div className='cta'>
     <div className='container'>
-      <a href='#' className='signup uppercase text-lg font-semibold'>
+      <ButtonLink
+        href='#'
+        variant={buttonLinkVariants.variant.outline}
+        size={buttonLinkVariants.size.md}
+        className='signup'
+      >
         Sign-Up Now!
-      </a>
+      </ButtonLink>
 
       <div className='socials'>
         <span className='title uppercase text-xl font-bold'>Follow Us</span>

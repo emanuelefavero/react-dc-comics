@@ -7,7 +7,7 @@ export const buttonVariants = Object.freeze({
     primary: 'primary',
   },
   size: {
-    sm: 'sm',
+    sm: 'sm text-xs',
   },
 });
 
@@ -20,12 +20,7 @@ export const Button = ({
 }) => (
   <button
     type='button'
-    className={cx(
-      'button uppercase text-xs font-bold',
-      variant,
-      size,
-      className,
-    )}
+    className={cx('button uppercase font-bold', variant, size, className)}
     {...props}
   >
     {children}

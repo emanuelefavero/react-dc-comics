@@ -80,24 +80,7 @@
         gap: 1.5rem;
       }
 
-      a.signup {
-        border: 2px solid var(--primary);
-        padding-block: 0.5rem;
-        padding-inline: 0.8rem;
-        box-shadow: var(--shadow-sm);
-        transition:
-          background-color 0.2s ease,
-          transform 0.2s ease;
-
-        &:hover,
-        &:focus-visible {
-          background-color: var(--primary);
-        }
-
-        &:active {
-          transform: scaleX(0.95) translateY(1px);
-        }
-
+      .signup {
         @media (width <= 540px) {
           text-align: center;
         }
