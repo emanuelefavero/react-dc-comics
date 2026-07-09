@@ -1,6 +1,7 @@
 .services {
   padding-block: 1.5rem;
   background-color: var(--primary);
+  color: var(--primary-foreground);
 
   .service-list {
     --columns: 1;
