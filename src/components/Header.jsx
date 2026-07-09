@@ -9,32 +9,35 @@ const Logo = () => (
   </a>
 );
 
-const Navbar = () => (
-  <nav className='navbar' aria-label='Main navigation'>
-    <ul>
-      {navLinks.map((link) => (
-        <li key={link.id}>
-          <a
-            href={link.href}
-            aria-current={link.isActive ? 'page' : undefined} // current page
-            className={cx(
-              'uppercase text-xs font-bold',
-              link.isActive && 'active',
-            )}
-          >
-            {link.label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </nav>
-);
+const NavLink = ({ link }) =>
+  link && (
+    <a
+      href={link.href}
+      aria-current={link.isActive ? 'page' : undefined} // current page
+      className={cx('uppercase text-xs font-bold', link.isActive && 'active')}
+    >
+      {link.label}
+    </a>
+  );
+
+const Navbar = ({ links }) =>
+  links.length > 0 && (
+    <nav className='navbar' aria-label='Main navigation'>
+      <ul>
+        {links.map((link) => (
+          <li key={link.id}>
+            <NavLink link={link} />
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 
 export const Header = () => (
   <header className='header'>
     <div className='container'>
       <Logo />
-      <Navbar />
+      <Navbar links={navLinks} />
     </div>
   </header>
 );
