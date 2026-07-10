@@ -1,0 +1,52 @@
+.comics {
+  padding-bottom: 1.25rem;
+
+  .title {
+    padding-inline: 1.875rem;
+    padding-block: 0.6rem;
+    background-color: var(--primary);
+    display: inline-block;
+    transform: translateY(-50%);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .list {
+    padding-inline: 0.875rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3.375rem 1.5rem;
+
+    .comic-card {
+      display: block;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover,
+      &:focus-visible {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scaleX(0.95) translateY(1px);
+      }
+
+      > :not(:first-child) {
+        margin-top: 1.25rem;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: top center;
+        user-select: none;
+        box-shadow: var(--shadow-sm);
+      }
+    }
+  }
+
+  .load-more {
+    display: flex;
+    margin-inline: auto;
+    margin-top: 3.375rem;
+  }
+}

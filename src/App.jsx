@@ -1,11 +1,8 @@
-import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
-import { Main } from '@/components/Main';
+import { RootLayout } from '@/components/layout/RootLayout';
+import { HomePage } from '@/pages/home/HomePage';
 
 export const App = () => (
-  <>
-    <Header />
-    <Main />
-    <Footer />
-  </>
+  <RootLayout>
+    <HomePage />
+  </RootLayout>
 );
