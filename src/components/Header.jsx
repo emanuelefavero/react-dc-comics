@@ -20,7 +20,7 @@ const NavLink = ({ link }) =>
     </a>
   );
 
-const Navbar = ({ links }) =>
+const Navbar = ({ links = [] }) =>
   links.length > 0 && (
     <nav className='navbar' aria-label='Main navigation'>
       <ul>
