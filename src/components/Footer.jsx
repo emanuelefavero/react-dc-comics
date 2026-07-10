@@ -3,44 +3,85 @@ import { ButtonLink, buttonLinkVariants } from '@/components/ui/ButtonLink';
 import { linkGroups, socialLinks } from '@/data/footer';
 import './Footer.css';
 
-const Hero = () => (
+const FooterLink = ({ link }) =>
+  link && (
+    <a href={link.href} className='link text-xs'>
+      {link.label}
+    </a>
+  );
+
+const FooterLinkGroup = ({ group }) =>
+  group && (
+    <li className='link-group'>
+      <span className='uppercase text-lg font-bold'>{group.title}</span>
+
+      <ul>
+        {group.links.map((link) => (
+          <li key={link.id}>
+            <FooterLink link={link} />
+          </li>
+        ))}
+      </ul>
+    </li>
+  );
+
+const FooterNavigation = ({ groups = [] }) =>
+  groups.length > 0 && (
+    <nav className='links' aria-label='Footer navigation'>
+      <ul className='link-groups'>
+        {groups.map((group) => (
+          <FooterLinkGroup group={group} key={group.id} />
+        ))}
+      </ul>
+    </nav>
+  );
+
+const FooterLogo = ({ src, width = 560, height = 560 }) =>
+  src && (
+    <img
+      className='logo'
+      src={src}
+      alt=''
+      width={width}
+      height={height}
+      draggable='false'
+    />
+  );
+
+const FooterHero = () => (
   <div className='hero'>
     <div className='container'>
-      <nav className='links' aria-label='Footer navigation'>
-        <ul className='link-groups'>
-          {linkGroups.map((group) => (
-            <li key={group.id} className='link-group'>
-              <span className='uppercase text-lg font-bold'>
-                {group.title}
-              </span>
-
-              <ul>
-                {group.links.map((link) => (
-                  <li key={link.id}>
-                    <a href={link.href} className='link text-xs'>
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <img
-        className='logo'
-        src={footerLogo}
-        alt=''
-        width={563}
-        height={560}
-        draggable='false'
-      />
+      <FooterNavigation groups={linkGroups} />
+      <FooterLogo src={footerLogo} />
     </div>
   </div>
 );
 
-const CTA = () => (
+const FooterSocialLink = ({ link }) =>
+  link && (
+    <a href={link.href} className='social-link'>
+      <img
+        src={link.icon}
+        alt={`Follow us on ${link.label}`}
+        draggable='false'
+      />
+    </a>
+  );
+
+const FooterSocialLinks = ({ links = [] }) =>
+  links.length > 0 && (
+    <nav aria-label='Social links' className='social-links'>
+      <ul>
+        {links.map((link) => (
+          <li key={link.id}>
+            <FooterSocialLink link={link} />
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+
+const FooterCTA = () => (
   <div className='cta'>
     <div className='container'>
       <ButtonLink
@@ -54,22 +95,7 @@ const CTA = () => (
 
       <div className='socials'>
         <span className='title uppercase text-xl font-bold'>Follow Us</span>
-
-        <nav aria-label='Social links' className='social-links'>
-          <ul>
-            {socialLinks.map((link) => (
-              <li key={link.id}>
-                <a href={link.href} className='social-link'>
-                  <img
-                    src={link.icon}
-                    alt={`Follow us on ${link.label}`}
-                    draggable='false'
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <FooterSocialLinks links={socialLinks} />
       </div>
     </div>
   </div>
@@ -77,7 +103,7 @@ const CTA = () => (
 
 export const Footer = () => (
   <footer className='footer'>
-    <Hero />
-    <CTA />
+    <FooterHero />
+    <FooterCTA />
   </footer>
 );
