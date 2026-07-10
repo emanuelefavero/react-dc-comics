@@ -1,0 +1,21 @@
+.logo {
+  border-radius: 50%;
+  margin-block: 1rem;
+  transition:
+    filter 0.2s ease-in-out,
+    transform 0.1s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    filter: brightness(1.08);
+  }
+
+  &:active {
+    transform: scaleX(0.95) translateY(1px);
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+}

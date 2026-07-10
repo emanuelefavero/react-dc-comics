@@ -1,13 +1,5 @@
-import logoImg from '@/assets/img/dc-logo.png';
-import { navLinks } from '@/data/navigation';
 import { cx } from '@/lib/utils';
-import './Header.css';
-
-const Logo = () => (
-  <a href='#' className='logo' aria-label='DC Comics'>
-    <img src={logoImg} alt='' width={80} height={80} draggable='false' />
-  </a>
-);
+import './Navbar.css';
 
 const NavLink = ({ link }) =>
   link && (
@@ -20,7 +12,7 @@ const NavLink = ({ link }) =>
     </a>
   );
 
-const Navbar = ({ links = [] }) =>
+export const Navbar = ({ links = [] }) =>
   links.length > 0 && (
     <nav className='navbar' aria-label='Main navigation'>
       <ul>
@@ -32,12 +24,3 @@ const Navbar = ({ links = [] }) =>
       </ul>
     </nav>
   );
-
-export const Header = () => (
-  <header className='header'>
-    <div className='container'>
-      <Logo />
-      <Navbar links={navLinks} />
-    </div>
-  </header>
-);

@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--foreground);
+  color: var(--foreground-inverted);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

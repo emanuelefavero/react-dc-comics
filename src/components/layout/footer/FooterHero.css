@@ -1,0 +1,66 @@
+.footer-hero {
+  position: relative;
+  background-image: url('@/assets/img/footer-bg.jpg');
+  background-size: cover;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+
+    .links {
+      position: relative;
+      z-index: 1;
+      padding-block: 2.7rem;
+
+      .link-groups {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+        gap: 1rem 2rem;
+
+        @media (width >= 540px) {
+          height: 18.5rem;
+        }
+
+        .link-group {
+          display: flex;
+          flex-direction: column;
+
+          ul {
+            margin-top: 0.8rem;
+
+            .link {
+              display: block;
+              color: var(--foreground-muted);
+              padding-block: 0.15rem;
+              transition: color 0.2s ease-in-out;
+
+              &:hover,
+              &:focus-visible {
+                color: var(--foreground);
+                text-decoration: underline;
+                text-underline-offset: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .logo {
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      right: 1rem;
+      max-width: none;
+      transform: translateY(-51%);
+      opacity: 0.3;
+      pointer-events: none;
+      user-select: none;
+
+      @media (width >= 990px) {
+        opacity: 0.9;
+      }
+    }
+  }
+}
