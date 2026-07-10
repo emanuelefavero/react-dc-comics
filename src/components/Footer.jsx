@@ -3,37 +3,26 @@ import { ButtonLink, buttonLinkVariants } from '@/components/ui/ButtonLink';
 import { linkGroups, socialLinks } from '@/data/footer';
 import './Footer.css';
 
-const { dcComics, shop, dc, sites } = linkGroups;
-const columns = [
-  { id: 1, groups: [dcComics, shop] },
-  { id: 2, groups: [dc] },
-  { id: 3, groups: [sites] },
-];
-
 const Hero = () => (
   <div className='hero'>
     <div className='container'>
       <nav className='links' aria-label='Footer navigation'>
-        <ul className='columns'>
-          {columns.map((column) => (
-            <li key={column.id} className='column'>
-              {column.groups.map((group) => (
-                <div key={group.id} className='link-group'>
-                  <span className='uppercase text-lg font-bold'>
-                    {group.title}
-                  </span>
+        <ul className='link-groups'>
+          {linkGroups.map((group) => (
+            <li key={group.id} className='link-group'>
+              <span className='uppercase text-lg font-bold'>
+                {group.title}
+              </span>
 
-                  <ul>
-                    {group.links.map((link) => (
-                      <li key={link.id}>
-                        <a href={link.href} className='link text-xs'>
-                          {link.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              <ul>
+                {group.links.map((link) => (
+                  <li key={link.id}>
+                    <a href={link.href} className='link text-xs'>
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>

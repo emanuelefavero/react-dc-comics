@@ -4,8 +4,8 @@ import pinterestIcon from '@/assets/img/footer-pinterest.png';
 import twitterIcon from '@/assets/img/footer-twitter.png';
 import youtubeIcon from '@/assets/img/footer-youtube.png';
 
-export const linkGroups = {
-  dcComics: {
+export const linkGroups = [
+  {
     id: 1,
     title: 'DC Comics',
     links: [
@@ -18,7 +18,7 @@ export const linkGroups = {
       { id: 7, label: 'News', href: '#' },
     ],
   },
-  shop: {
+  {
     id: 2,
     title: 'Shop',
     links: [
@@ -26,7 +26,7 @@ export const linkGroups = {
       { id: 2, label: 'Shop DC Collectibles', href: '#' },
     ],
   },
-  dc: {
+  {
     id: 3,
     title: 'DC',
     links: [
@@ -43,7 +43,7 @@ export const linkGroups = {
       { id: 11, label: 'Contact Us', href: '#' },
     ],
   },
-  sites: {
+  {
     id: 4,
     title: 'Sites',
     links: [
@@ -54,7 +54,7 @@ export const linkGroups = {
       { id: 5, label: 'DC Power Visa', href: '#' },
     ],
   },
-};
+];
 
 export const socialLinks = [
   { id: 1, label: 'Facebook', href: '#', icon: facebookIcon },
